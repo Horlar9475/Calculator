@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <main>
+        <div id="sc" class="Scientific">
+            <div class="name">
+                <h3 style="margin-top: 2px;">Scientific Calculator</h3>
+            </div>
+            <div id="sc_screen" class="screen">
+                <p id="scScreenTxt"></p>
+                <p id="scAnswer"></p>
+            </div>
+            <div class="btn">
+                <div class="Sbtn" onclick="scClear()">C</div>
+                <div class="Sbtn" onclick="ScCalc('&lpar;')">(</div>
+                <div class="Sbtn" onclick="SQroot()">&radic;</div>
+                <div class="Sbtn" onclick="ScCalc('&rpar;')">)</div>
+                <div class="Sbtn" onclick="SQ()">x<sup>2</sup></div>
+                <div class="Sbtn" onclick="LOG()">log</div>
+                <div class="Sbtn" onclick="IN()">In</div>
+                <div class="Sbtn" onclick="PIE()">&pi;</div>
+                <div class="Sbtn" onclick="sine()">sin</div>
+                <div class="Sbtn" onclick="cosine()">cos</div>
+                <div class="Sbtn" onclick="tangent()">tan</div>
+                <div class="Sbtn" onclick="powerMinusOne()">x<sup>-1</sup></div>
+                <div class="Sbtn" onclick="tenPower()">10<sup>x</sup></div>
+                <div class="Sbtn" onclick="ScCalc('1')">1</div>
+                <div class="Sbtn" onclick="ScCalc('2')">2</div>
+                <div class="Sbtn" onclick="ScCalc('3')">3</div>
+                <div class="Sbtn" onclick="ScCalc('*')">×</div>
+                <div class="Sbtn" onclick="percent()">%</div>
+                <div class="Sbtn" style="font-style: italic;" onclick="del()">Del</div>
+                <div class="Sbtn" onclick="ScCalc('4')">4</div>
+                <div class="Sbtn" onclick="ScCalc('5')">5</div>
+                <div class="Sbtn" onclick="ScCalc('6')">6</div>
+                <div class="Sbtn" onclick="ScCalc('/')">÷</div>
+                <div class="Sbtn" onclick="ScCalc('-')">-</div>
+                <div class="Sbtn" onclick="ScCalc('+')">+</div>
+                <div class="Sbtn" onclick="ScCalc('7')">7</div>
+                <div class="Sbtn" onclick="ScCalc('8')">8</div>
+                <div class="Sbtn" onclick="ScCalc('9')">9</div>
+                <div class="Sbtn" onclick="ScCalc('.')">.</div>
+                <div class="Sbtn" onclick="ScCalc('0')">0</div>
+                <div class="Sbtn" onclick="scAns()">Ans</div>
+            </div>
+        </div>
+        <div id="mn" class="manual">
+            <div class="Mname" style="padding-top: 4px;">Manual Calculator</div>
+            <div id="mnScreen" class="div1"></div>
+        <div class="div2">
+            <div id="div1a" onclick="mnCalc('1')">1</div>
+            <div id="div1a" onclick="mnCalc('2')">2</div>
+            <div id="div1a" onclick="mnCalc('3')">3</div>
+            <div id="div1a" onclick="mnClear()">C</div>
+            <div id="div1a" onclick="mnCalc('4')">4</div>
+            <div id="div1a" onclick="mnCalc('5')">5</div>
+            <div id="div1a" onclick="mnCalc('6')">6</div>
+            <div id="div1a" onclick="mnCalc('-')">-</div>
+            <div id="div1a" onclick="mnCalc('7')">7</div>
+            <div id="div1a" onclick="mnCalc('8')">8</div>
+            <div id="div1a" onclick="mnCalc('9')">9</div>
+            <div id="div1a" onclick="mnCalc('/')">÷</div>
+            <div id="div1a" onclick="mnCalc('&lpar;')">(</div>
+            <div id="div1a" onclick="mnCalc('0')">0</div>
+            <div id="div1a" onclick="mnCalc('&rpar;')">)</div>
+            <div id="div1a" onclick="mnCalc('*')">×</div>
+            <div id="div1a" onclick="mnPercent()">%</div>
+            <div id="div1a" onclick="mnCalc('.')">.</div>
+            <div id="div1a" onclick="mnAns()">Ans</div>
+            <div id="div1a" onclick="mnCalc('+')">+</div>
+        </div>
+        </div>
+        <div class="switch">
+            <ul>
+                <li>
+                    Scientific
+                    <img onclick="scOn()" src="switch (1).png" alt="On">
+                </li>
+                <li>
+                    Turn Off
+                    <img onclick="off()" src="switch.png" alt="">
+                </li>
+                <li>
+                    Manual
+                    <img onclick="mnOn()" src="switch (1).png" alt="On">
+                </li>
+            </ul>
+        </div>
+    </main>
+    <div class="switch">
+        <ul>
+            <li>
+                Scientific
+                <img onclick="scOn()" src="switch (1).png" alt="On">
+            </li>
+            <li>
+                Turn Off
+                <img onclick="off()" src="switch.png" alt="">
+            </li>
+            <li>
+                Manual
+                <img onclick="mnOn()" src="switch (1).png" alt="On">
+            </li>
+        </ul>
+    </div>
+
+
+<script src="main.js"></script>
+</body>
+</html>
